@@ -34,10 +34,10 @@ class Solution {
         head=null;
         return head;
      }
-     if(s.next.next==null){
-        s.next=null;
-        return head;
-     }
+    //  if(s.next.next==null){
+    //     s.next=null;
+    //     return head;
+    //  }
      while(f.next.next!=null && f.next.next.next!=null) {
         s=s.next;
         f=f.next.next;
