@@ -30,30 +30,18 @@ public class Solution {
            for(int i=1;i<=j;i++){
             temp1=temp1.next;
            }
-           while(temp1!=temp2){
-            temp1=temp1.next;
-            temp2=temp2.next;
-           }
-           return temp1;
         }
          if(size2>size1){
            int j=size2-size1;
            for(int i=1;i<=j;i++){
             temp2=temp2.next;
            }
-           while(temp2!=temp1){
+        }
+        while(temp2!=temp1){
             temp2=temp2.next;
             temp1=temp1.next;
            }
-           return temp2;
-        }
-        if(size1==size2){
-            while(temp1!=temp2){
-             temp2=temp2.next;
-             temp1=temp1.next;
-           }
-           return temp2;
-        }
-        return null;
+        return temp2;
+        
     }
 }
